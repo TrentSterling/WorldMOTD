@@ -17,6 +17,7 @@ public class WmMotd implements CommandExecutor
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String lbl, String[] args)
     {
+        
         if(lbl.equalsIgnoreCase("wmotd"))
         {
             if(args.length == 0)
