@@ -1,0 +1,10 @@
+name: WorldMOTD
+main: net.arcanerealm.worldmotd.WorldMOTD
+version: 0.3
+author: MrComputeranswers
+website: http://arcanerealm.net
+description: WorldMOTD is a modular plugin that takes MOTDs to the next level.
+
+commands:
+  wmotd:
+    description: WorldMOTD base command

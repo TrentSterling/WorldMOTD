@@ -1,0 +1,118 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                       WorldMOTD                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+#Config version - 0.3
+#Developed by Kenny Williams | exload
+#Website: http://mcacraft.com/
+#Forums: http://forums.mcacraft.com/
+#YouTube: http://www.youtube.com/mrcomputeranswers
+#Questions, comments, or bugs, email me: support@mcacraft.com
+
+#Do NOT mess with this. It WILL break the plugin.
+config-version: 0.3
+
+auto-update:
+  #Should the Auto-Update feature be used?
+  enable: true
+  #If command-confirm is set to true then the plugin will ask a player with "worldmotd.update.info"
+  #to use the command "/wm update" to fetch the latest build from BukkitDev. All updates
+  #are applied after a server restart.
+  #If false, no message will be sent to the player when they log into the server and updates will
+  #commence automatically.
+  command-confirm: true
+
+#Mcstats.org reporting. This information is harmless and simply provides me, the
+#developer, with useful stats on this plugin.
+mcstats: true
+
+server-list-motd:
+  enable: true
+  random: true
+  default:
+  - 'MCA Craft - Minecraft at its Best'
+  - 'A Minecraft Server'
+  worlds:
+    world:
+    - 'Join the server now!'
+    - 'No, seriously, join.'
+    - 'Im not joking.'
+    world_nether:
+    - 'The nether is scary.'
+    - 'Watch your back always!'
+    
+global:
+  enable: false
+  events:
+    switch-world:
+      enable: false
+      motd: 
+      - 'You have just switched worlds!'
+      - 'Good luck in this world. I dont think you will make it.'
+      clear-chat: false
+    on-player-login:
+      enable: false
+      motd: 
+      - '&bWelcome %player% to MCA Craft!'
+      - '&cCurrently Online: &3%playerlist%'
+      clear-chat: false
+      
+#Which worlds will this plugin be enabled in?
+world-enabler:
+  - world
+  - world_nether
+  - build
+
+#Duplicate the below format for adding another world. Remember the plugin will not
+#look for these unless it is in the worlds list. Server color codes are supported.
+#%player% = The players display name
+#%playerlist% = The players currntly online on the server
+#%totalplayers% = An integer amount of online players
+#%world% = The world the player is in
+#Got a suggestion for another string replacement for me to add? Drop a comment at the BukkitDev page!
+world:
+  switch-world:
+    enable: true
+    #MOTD message to be sent when a players switches worlds
+    motd:
+      - 'Welcome to this awesome world!'
+    #Set to true to clear the chat.
+    clear-chat: false
+  on-player-login:
+    #Set to true to send the player this message when he/she logs in. Set to false
+    #to cancel this event.
+    enable: true
+    #The message to be sent to the player when they log in.
+    motd:
+      - '&bWelcome %player% to MCA Craft!'
+      - '&cCurrently Online: &3%playerlist%'
+    #Set to true to clear the chat.
+    clear-chat: false
+  
+world_nether:
+  switch-world:
+    enable: true
+    motd:
+      - 'Always watch your back!'
+    clear-chat: false
+  on-player-login:
+    enable: true
+    motd:
+      - 'This message will be sent when the player logs in to world_nether!'
+    clear-chat: false
+  
+build:
+  switch-world:
+    enable: true
+    motd:
+      - 'Welcome to build world!'
+    clear-chat: false
+  on-player-login:
+    enable: true
+    motd: 
+      - 'This message will be sent when the player logs in to build!!'
+    clear-chat: false
+#Add more worlds down here!
+  
