@@ -1,0 +1,47 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    build.xml
+#	deleted:    nbproject/build-impl.xml
+#	deleted:    nbproject/genfiles.properties
+#	deleted:    nbproject/private/config.properties
+#	deleted:    nbproject/private/private.properties
+#	deleted:    nbproject/private/private.xml
+#	deleted:    nbproject/project.properties
+#	deleted:    nbproject/project.xml
+#	modified:   src/net/arcanerealm/worldmotd/WorldMOTD.java
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    build/built-jar.properties
+#	deleted:    build/classes/config.yml
+#	deleted:    build/classes/net/arcanerealm/worldmotd/Motd.class
+#	deleted:    build/classes/net/arcanerealm/worldmotd/WorldMOTD.class
+#	deleted:    build/classes/net/arcanerealm/worldmotd/WorldMotdAPI.class
+#	deleted:    build/classes/net/arcanerealm/worldmotd/commands/WmMotd.class
+#	deleted:    build/classes/net/arcanerealm/worldmotd/listeners/PlayerJoinListener.class
+#	deleted:    build/classes/net/arcanerealm/worldmotd/listeners/ServerListPingListener.class
+#	deleted:    build/classes/net/arcanerealm/worldmotd/listeners/SwitchWorldListener.class
+#	deleted:    build/classes/net/arcanerealm/worldmotd/util/MSG.class
+#	deleted:    build/classes/net/arcanerealm/worldmotd/util/SLAPI.class
+#	deleted:    build/classes/net/arcanerealm/worldmotd/util/VConfig.class
+#	deleted:    build/classes/plugin.yml
+#	deleted:    dist/README.TXT
+#	deleted:    dist/WorldMOTD.jar
+#	deleted:    dist/lib/bukkit-1.4.7-R1.0.jar
+#	modified:   manifest.mf
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.gitattributes
+#	.gitignore
+#	build.xml
+#	nbproject/
+
